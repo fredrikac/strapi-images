@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pets",
+  "info": {
+    "singularName": "pet",
+    "pluralName": "pets",
+    "displayName": "Pet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "favorite_candies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::candy.candy"
+    },
+    "portrait": {
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

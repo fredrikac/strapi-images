@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candies",
+  "info": {
+    "singularName": "candy",
+    "pluralName": "candies",
+    "displayName": "Candy"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    }
+  }
+}
